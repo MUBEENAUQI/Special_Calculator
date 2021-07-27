@@ -32,10 +32,10 @@ export default function Calculator() {
   return (
     <View style={styles.container}>
       <View style={styles.topcontainer}>
-        <Text style={{ height: 70, color: "#898989", fontSize: 35 }} >{textdata}</Text>
-        <Modal isVisible={isModalVisible} onSwipeStart={toggleModal} backdropOpacity={.1} onBackdropPress={() => setModalVisible(false)} style={{ width: "100%", alignItems: "center" }}>
-          <View style={{ justifyContent: "center", alignItems: "center", height: windowHeight / 2.5, width: windowWidth / 1.5, backgroundColor: "#9c9e9b", opacity: .7, borderRadius: 30 }}>
-            <Text style={{ color: "#f4f6f5", fontSize: 40 }}>Hello World</Text>
+        <Text style={styles.textdatas} >{textdata}</Text>
+        <Modal isVisible={isModalVisible} onSwipeStart={toggleModal} backdropOpacity={.1} onBackdropPress={() => setModalVisible(false)} style={styles.modalcontainer}>
+          <View style={styles.modalview}>
+            <Text style={styles.hellotext}>Hello World</Text>
           </View>
         </Modal>
       </View>
@@ -136,7 +136,7 @@ export default function Calculator() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#414141" },
-  topcontainer: { height: windowHeight / 2.2, justifyContent: "flex-end", alignItems: "flex-end", marginRight: 10 },
+  topcontainer: { height: windowHeight / 2.1, justifyContent: "flex-end", alignItems: "flex-end", marginRight: 10 },
   bottomcontainer: { height: windowHeight / 1.9, backgroundColor: "#414141", elevation: 8 },
   bottomcontainerspace: { height: windowHeight / 50 },
   bottomcontainerrow: { flexDirection: "row" },
@@ -153,6 +153,9 @@ const styles = StyleSheet.create({
   buttonoperatorend2: { backgroundColor: "#f4f2b8", width: windowWidth / 7.4, height: windowWidth / 7.4, alignItems: "center", borderRadius: windowWidth / 4, paddingTop: 8 },
   text: { fontSize: 25, color: "#666867" },
   text2: { fontSize: 25, color: "#ada87f" },
-
+  textdatas:{ height: 70, color: "#898989", fontSize: 35 },
+  modalview:{ justifyContent: "center", alignItems: "center", height: windowHeight / 2.5, width: windowWidth / 1.5, backgroundColor: "#9c9e9b", opacity: .7, borderRadius: 30 },
+  hellotext:{ color: "#f4f6f5", fontSize: 40 },
+  modalcontainer:{ width: "100%", alignItems: "center" },
 })
 
