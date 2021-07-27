@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
   buttonoperatormiddle2: { backgroundColor: "#383639", width: windowWidth / 8, height: "100%", alignItems: "center", paddingTop: 13 },
   buttonoperatorend: { width: windowWidth / 4, justifyContent: "flex-start", alignItems: "center", height: windowHeight / 10 },
   buttonoperatorend1: { backgroundColor: "#383639", width: windowWidth / 8, height: "80%", justifyContent: "center", alignItems: "center", borderBottomStartRadius: 30, borderBottomEndRadius: 30 },
-  buttonoperatorend2: { backgroundColor: "#f4f2b8", width: windowWidth / 7.4, height: windowWidth / 7.4, alignItems: "center", borderRadius: windowWidth / 4, paddingTop: 8 },
+  buttonoperatorend2: { backgroundColor: "#f4f2b8", width: windowWidth / 7.4, height: windowWidth / 7.4, alignItems: "center", borderRadius: windowWidth / 4, paddingTop: 10 },
   text: { fontSize: 25, color: "#666867" },
   text2: { fontSize: 25, color: "#ada87f" },
   textdatas:{ height: 70, color: "#898989", fontSize: 35 },
